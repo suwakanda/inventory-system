@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Inventory Items</h1>
+    <input type="text" id="search" placeholder="Search by name...">
+    <ul id="inventory-list"></ul>
+
+    <script>
+        $(document).ready(function() {
+            // default load
+            loadInventory();
+
+            // search
+            $('#search').on('input', function() {
+                loadInventory($(this).val());
+            });
+
+            function loadInventory(nameFilter = '') {
+                $.ajax({
+                    url: '/api/inventory/',
+                    data: { search: nameFilter },
+                    success: function(data) {
+                        $('#inventory-list').empty();
+                        data.forEach(function(item) {
+                            $('#inventory-list').append(`
+                                <li>
+                                    <a href="/inventory/${item.id}/">
+                                        ${item.name} - ${item.supplier_name}
+                                        (${item.availability ? 'Available' : 'Unavailable'})
+                                    </a>
+                                </li>
+
+
+
+                            `);
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+
+
+
+
+</html>

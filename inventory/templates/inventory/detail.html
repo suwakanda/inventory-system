@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ item.name }}</title>
+</head>
+<body>
+
+    <img src="{% static 'inventory/images/placeholder.png' %}" 
+         alt="{{ item.name }} thumbnail"
+         style="max-width: 300px; margin: 20px 0;">
+
+    <h1>{{ item.name }}</h1>
+    <p>Description: {{ item.description }}</p>
+    <p>Note: {{ item.note }}</p>
+    <p>Stock: {{ item.stock }}</p>
+    <p>Supplier: {{ item.supplier.name }}</p>
+    <p>Availability: {% if item.availability %}Available{% else %}Unavailable{% endif %}</p>
+    <a href="/inventory/">Back to list</a>
+</body>
+</html>
