@@ -36,6 +36,8 @@ A Django-based inventory management system with Django Rest Framework (DRF) API 
 **Start development server**
 
     python manage.py runserver
+
+**Create inventory use the admin panel**
     
 **Access endpoints**
 
