@@ -28,7 +28,7 @@ A Django-based inventory management system with Django Rest Framework (DRF) API 
    cd inventory-system
     python manage.py migrate
    
-5. **Create superuser**
+5. **Create Admin**
    ```bash
     python manage.py createsuperuser
 
@@ -37,7 +37,7 @@ A Django-based inventory management system with Django Rest Framework (DRF) API 
 
     python manage.py runserver
 
-**Create inventory use the admin panel**
+**Creating inventory use the admin panel before use admin panel please create an admin**
     
 **Access endpoints**
 
