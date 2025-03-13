@@ -44,7 +44,7 @@ Inventory List: http://localhost:8000/inventory/
 
 API Endpoint: http://localhost:8000/api/inventory/
 
-Item Detail: http://localhost:8000/inventory/(item id)/
+Item Detail: http://localhost:8000/inventory/ (item id)/
 
 
 **Testing**
