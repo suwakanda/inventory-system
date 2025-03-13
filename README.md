@@ -11,7 +11,7 @@ A Django-based inventory management system with Django Rest Framework (DRF) API 
 ### Installation
 1. **Clone repository**
    ```bash
-   git clone https://github.com/yourusername/inventory-system.git
+   git clone https://github.com/suwakanda/inventory-system.git
    cd inventory-system
 
 2. **Create virtual environment**
