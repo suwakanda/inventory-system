@@ -12,19 +12,19 @@ A Django-based inventory management system with Django Rest Framework (DRF) API 
 1. **Clone repository**
    ```bash
    git clone https://github.com/suwakanda/inventory-system.git
-   cd inventory-system
-
+   
 2. **Create virtual environment**
    ```bash
     python -m venv venv
     .\venv\Scripts\activate  # Windows
    
-3. **Install dependencies**
+3. **Install Django Rest Framework (DRF)：**
    ```bash
-    pip install -r requirements.txt
+   pip install djangorestframework django-filter
    
 4. **Database setup**
    ```bash
+   cd inventory-system
     python manage.py migrate
    
 5. **Create superuser**
@@ -50,7 +50,7 @@ Item Detail: http://localhost:8000/inventory/1/
 **Testing**
 Run test suite:
 
-    python manage.py test inventory
+      python manage.py test inventory
 
 **Static Files Management**
 Placeholder images should be stored in:
@@ -58,6 +58,6 @@ Placeholder images should be stored in:
 inventory/static/inventory/images/
 
 **For production:**
-
+   ```bash
     python manage.py collectstatic
 
