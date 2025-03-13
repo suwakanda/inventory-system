@@ -52,12 +52,4 @@ Run test suite:
 
       python manage.py test inventory
 
-**Static Files Management**
-Placeholder images should be stored in:
-
-inventory/static/inventory/images/
-
-**For production:**
-   ```bash
-    python manage.py collectstatic
 
