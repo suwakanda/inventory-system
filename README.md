@@ -18,8 +18,9 @@ A Django-based inventory management system with Django Rest Framework (DRF) API 
     python -m venv venv
     .\venv\Scripts\activate  # Windows
    
-3. **Install Django Rest Framework (DRF)：**
+3. **Install Django and Django Rest Framework (DRF)：**
    ```bash
+   pip install django
    pip install djangorestframework django-filter
    
 4. **Database setup**
